@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-LEARNING WEBSITE FOR BEGINNER</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <----NAVBAR----->
+    <!----NAVBAR----->
     <nav class="navbar-container">
-        <img src="" alt="" class="logo">
-        <ul class="navbar-contain">
-            <li class="navbar-list"><a href="#" class="navbar-list-link">HOME</a></li>
-            <li class="navbar-list"><a href="#" class="navbar-list-link">COURSE</a></li>
-            <li class="navbar-list"><a href="#" class="navbar-list-link">BLOG</a></li>
-            <li class="navbar-list"><a href="#" class="navbar-list-link">ABOUT US</a></li>
-            <li class="navbar-list"><a href="#" class="navbar-list-link">CONTACT US</a></li>
-            <li class="navbar-list"><a href="#" class="navbar-list-link">LOG IN</a></li>
+        <img src="/image/logo.png" alt="" class="logo">
+        <ul class="navbar-contain" id="menuList" for="menuList">
             
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-home"></i>HOME</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-book"></i>COURSE</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-pencil-alt"></i>BLOG</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-user-friends"></i>ABOUT US</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-envelope"></i>CONTACT US</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link-darkmode"><i class="fa fa-moon"></i>LIGHT MODE</a></li>
+            <li class="navbar-list"><a href="#" class="navbar-list-link"><i class="fa fa-sign-in-alt"></i>LOG IN</a></li>  
         </ul>
+        <div class="menu-icon">
+                        <i class="fa-solid fa-bars" onclick="menuToggle()"></i>
+        </div>
     </nav>
 </body>
+<script>
+    let menuList =document.getElementById('menuList');
+    const newMenu = document.querySelector('nav ul')
+    menuList.style.maxHeight = '0px';
+    function menuToggle(){
+        newMenu.classList.toggle('.show');
+        if(menuList.style.maxHeight == '0px'){
+            menuList.style.maxHeight = '300px';
+        }
+        else{
+            menuList.style.maxHeight = '0px';
+        }
+    }
+</script>
 </html>

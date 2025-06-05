@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.navbar-container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: rgb(14, 188, 194);
+    padding: 10px 30px;
+    height: 70px;
+    position: relative;
+}
+.logo{
+    width: 5%;
+    height: 10vh;
+    border-radius: 100px;
+
+}
+.navbar-contain{
+    display: flex;
+    gap: 30px;
+}
+.navbar-contain li{
+    list-style-type: none;
+}
+.navbar-list{
+    display: block;
+}
+.navbar-list-link{
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: black;
+}
+.navbar-list-link:hover{
+    background-color: rgb(7, 186, 240);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease-out 1s;
+    width: 90%;
+}
+.fa{
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.navbar-list-link-darkmode{
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: black;
+}
+.navbar-list-link-darkmode:hover{
+    background-color: rgb(7, 7, 7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+}
+.menu-icon{
+    font-size: 30px;
+    margin-right: 50px;
+    display: none;
+}
+.menuList{
+    transition: all 3s;
+}
+/*for the Mobile*/
+@media (max-width:600px){
+   nav ul{
+        position: absolute;
+        top: 80px;
+        left: 0%;
+        right: 0%;
+        margin: 10px 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(102, 172, 172);
+        text-align: center;
+        display: none;
+ 
+   }
+   ul{
+        padding: 20px;
+   }
+   .menu-icon{
+    display: block;
+
+   }
+}
